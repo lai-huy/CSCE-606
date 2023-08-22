@@ -3,4 +3,5 @@
 *.out
 *.gcda
 *.gcno
+*.gcov
 Syllabus.pdf
