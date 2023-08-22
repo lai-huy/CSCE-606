@@ -1,3 +1,6 @@
 .vscode/
 *.gpg
+*.out
+*.gcda
+*.gcno
 Syllabus.pdf
