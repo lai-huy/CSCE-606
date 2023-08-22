@@ -118,12 +118,36 @@ bool test_get() {
 	END_TEST;
 }
 
+bool test_failConstruct() {
+	const string code = "Args arg{schema, 1, const_cast<char**>(args)};";
+	std::string schema = "l,p#,d*";
+	const char* args[] = {"-a"};
+
+	bool threw_expected_exception = false;
+	try {
+		Args arg{schema, 1, const_cast<char**>(args)};
+	}
+	catch (const invalid_argument& err) {
+		threw_expected_exception = true;
+	}
+	catch (...) {
+		std::cout << blue << "  [help] " << code << " threw an incorrect exception." << reset << "\n";
+	}
+	if (!threw_expected_exception) {
+		std::cout << red << "  [fail]" << reset << " (" << __FILE__ << ":" << __FUNCTION__ << ":" << __LINE__ << ") " << red << "expected " << code << " to throw std::invalid_argument." << reset << "\n";
+		test_passed = false;
+	}
+
+	END_TEST
+}
+
 int main() {
 	unsigned pass_cnt = 0, fail_cnt = 0, skip_cnt = 0;
 
 	test(has);
 	test(notHas);
 	test(get);
+	test(failConstruct);
 
 	cout << "\n";
 	cout << magenta << "summary:" << reset << "\n";
