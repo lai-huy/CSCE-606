@@ -10,7 +10,6 @@ using std::invalid_argument;
 
 /**
  * @brief
- *
  */
 class Args {
 private:
@@ -115,14 +114,35 @@ private:
         }
     }
 
+    /**
+     * @brief Determines if a flag is a boolean flag
+     *
+     * @param flag flag to determine the type
+     * @return true is the flag is a boolean flag
+     * @return false otherwise
+     */
     bool isBoolFlag(const char& flag) {
         return this->boolFlags.find(flag) != this->boolFlags.cend();
     }
 
+    /**
+     * @brief Determines if a flag is a boolean flag
+     *
+     * @param flag flag to determine the type
+     * @return true is the flag is a string flag
+     * @return false otherwise
+     */
     bool isStringFlag(const char& flag) {
         return this->stringFlags.find(flag) != this->stringFlags.cend();
     }
 
+    /**
+     * @brief Determines if a flag is a boolean flag
+     *
+     * @param flag flag to determine the type
+     * @return true is the flag is a integer flag
+     * @return false otherwise
+     */
     bool isIntFlag(const char& flag) {
         return this->intFalgs.find(flag) != this->intFalgs.cend();
     }
