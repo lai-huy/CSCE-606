@@ -72,6 +72,23 @@ bool test_failConstruct() {
 		test_passed = false;
 	}
 
+	schema = "l,p!,d*";
+	const char* args2[] = {"-l", "-p80", "-d/home/logs"};
+	threw_expected_exception = false;
+	try {
+		Args arg{schema, 1, const_cast<char**>(args2)};
+	}
+	catch (const invalid_argument& err) {
+		threw_expected_exception = true;
+	}
+	catch (...) {
+		std::cout << blue << "  [help] " << code << " threw an incorrect exception." << reset << "\n";
+	}
+	if (!threw_expected_exception) {
+		std::cout << red << "  [fail]" << reset << " (" << __FILE__ << ":" << __FUNCTION__ << ":" << __LINE__ << ") " << red << "expected " << code << " to throw std::invalid_argument." << reset << "\n";
+		test_passed = false;
+	}
+
 	END_TEST
 }
 

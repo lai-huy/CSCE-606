@@ -87,7 +87,7 @@ private:
                 intFalgs.insert({flag, int{}});
                 break;
             default:
-                break;
+                throw invalid_argument("Invalid flag type");
             }
         }
     }
