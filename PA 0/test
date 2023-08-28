@@ -1,3 +1,12 @@
 #!/bin/bash
 
-make run
+make clean
+g++ -std=c++17 -Wall -Wextra -Weffc++ -pedantic-errors -g --coverage -o main.out main.cpp
+./main.out
+mv main.out-main.gcda main.gcda
+mv main.out-main.gcno main.gcno
+
+gcov_output=$(gcov -mr main.cpp)
+echo $gcov_output
+coverage_percentage=$(echo "$gcov_output" | awk 'END{gsub(/executed:/, "", $(NF-2)); print $(NF-2)}')
+echo "coverage: $coverage_percentage"
