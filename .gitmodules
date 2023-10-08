@@ -1,3 +1,6 @@
 [submodule "PA 1"]
 	path = PA 1
 	url = https://github.com/tamu-edu-students/hw-ruby-into-lai.git
+[submodule "PA 2"]
+	path = PA 2
+	url = https://github.com/tamu-edu-students/hw-hello-rails-lai-huy.git
