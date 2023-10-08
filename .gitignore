@@ -1,6 +1,5 @@
 .vscode/
 node_modules/
-PA [1-9]*/
 
 package-lock.json
 package.json
