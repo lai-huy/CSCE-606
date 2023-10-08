@@ -4,3 +4,6 @@
 [submodule "PA 2"]
 	path = PA 2
 	url = https://github.com/tamu-edu-students/hw-hello-rails-lai-huy.git
+[submodule "PA 3"]
+	path = PA 3
+	url = https://github.com/tamu-edu-students/hw-acceptance-unit-test-cycle-lai.git
