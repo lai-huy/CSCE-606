@@ -8,7 +8,7 @@
 | 0                      | https://github.com/lai-huy/CSCE-606/tree/master/PA%200      |
 | 1                      | https://github.com/tamu-edu-students/hw-ruby-into-lai       |
 | 2                      | https://github.com/tamu-edu-students/hw-hello-rails-lai-huy |
-| 3                      | https://google.com                                          |
+| 3                      | https://github.com/lai-huy/hw-acceptance-unit-test-cycle    |
 | 4                      | https://google.com                                          |
 | 5                      | https://google.com                                          |
 
