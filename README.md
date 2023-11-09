@@ -3,14 +3,12 @@
 [BVCOG Contract Manager](https://github.com/BVCOG-Contract-Management/BVGOG-Contract-Manager)
 
 ## Programming Assignments
-| Programming Assignment | Link                                                        |
-| ---------------------- | ----------------------------------------------------------- |
-| 0                      | https://github.com/lai-huy/CSCE-606/tree/master/PA%200      |
-| 1                      | https://github.com/tamu-edu-students/hw-ruby-into-lai       |
-| 2                      | https://github.com/tamu-edu-students/hw-hello-rails-lai-huy |
+| Programming Assignment | Link                                                                   |
+| ---------------------- | ---------------------------------------------------------------------- |
+| 0                      | https://github.com/lai-huy/CSCE-606/tree/master/PA%200                 |
+| 1                      | https://github.com/tamu-edu-students/hw-ruby-into-lai                  |
+| 2                      | https://github.com/tamu-edu-students/hw-hello-rails-lai-huy            |
 | 3                      | https://github.com/tamu-edu-students/hw-acceptance-unit-test-cycle-lai |
-| 4                      | https://google.com                                          |
-| 5                      | https://google.com                                          |
 
 ## Course Description
 Development of advanced concepts in software engineering; software development environments as a mechanism for enhancing productivity and software quality; the classification, evaluation and selection of methodologies for environments; rapid prototyping and reusability concepts; artificial intelligence techniques applied to software engineering.
